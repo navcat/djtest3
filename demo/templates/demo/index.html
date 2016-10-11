@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>这是一个demo</title>
+	<link rel="stylesheet" href="{% static 'demo/css/index.css' %}">
+</head>
+<body>
+	<article>
+		<h3>这是一行文字</h3>
+		<button type="button" id="id_btn">这是一个按钮</button>
+		<img src="{% static 'demo/img/timg.jpg' %}" alt="">
+	</article>
+	<link rel="stylesheet" href="{% static 'demo/css/index.css' %}">
+	<script src="{% static 'demo/js/index.js' %}"></script>
+</body>
+</html>
