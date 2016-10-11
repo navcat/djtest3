@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link href="{{ STATIC_URL }}css/index.css" rel="stylesheet"/>
+	<link href="{% static 'css/index.css' %}" rel="stylesheet"/>
 </head>
 <body>
 	<article>
@@ -12,6 +13,7 @@
   Hello World
 	</h3>
   <img src="{{ STATIC_URL }}img/logo.png" alt="">
+  <img src="{% static 'img/logo.png' %}" alt="">
 </article>
 </body>
 </html>
