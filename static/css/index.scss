@@ -1,0 +1,7 @@
+$color: #00f;
+
+article{
+	width: 800px;
+	border:  10px dashed $color;
+	color: $color;
+}

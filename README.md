@@ -1,6 +1,7 @@
 # 概述
 Django1.8大型项目架构，主要是面向模块化开发，前后端都可以进行构建
 
+
 ## Demo解读
 Demo中包含一个模块名为demo，当然你也可以新建多个模块，模块下的目录结构如下：
 ```
@@ -16,22 +17,34 @@ demo/templates/demo/			# 模板文件
 
 ## 国际化，本地化
 
+
+
 ## 前端构建
+本项目基于gulp进行构建，包含图片压缩，CSS预处理
+> npm install --global gulp
+> npm install sass
+> gulp release
+
 
 ## 运行方式
 #### Step1.安装django
-此处我们使用的是django1.8。why？因为django1.8是一个LTS版本，详细可以看[Django官方文档](https://www.djangoproject.com/download/)
+> pip install django==1.8.12
+
+此处我们使用的是django1.8。why？因为django1.8是一个LTS版本，1.11版本尚未发布，详细可以看[Django官方文档](https://www.djangoproject.com/download/)
 
 ![](https://www.djangoproject.com/s/img/release-roadmap.e844db08610e.png)
+
+
 #### Step2.运行服务
 使用如下命令运行
 > python manage.py runserver
-
 
 #### Step3.测试
 访问页面：
 1. 首页：http://127.0.0.1:8000
 2. Demo页：http://127.0.0.1:8000/demo/
+
+
 
 ## 部署方式
 
@@ -42,8 +55,8 @@ demo/templates/demo/			# 模板文件
 ```
 python manage.py collectstatic
 ```
-#### Step2.nginx配置
 
+#### Step2.nginx配置
 将nginx配置文件中添加location静态文件指向
 ```
 location ^~/assets {
